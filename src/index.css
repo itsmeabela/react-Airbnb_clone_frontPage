@@ -54,6 +54,7 @@ section {
   flex: 0 0 auto; /* ADD */
   display: flex; /* ADD */
   flex-direction: column;
+  position: relative;
 }
 
 .card--image {
@@ -81,4 +82,13 @@ section {
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
+}
+.card-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-weight: bold;
 }

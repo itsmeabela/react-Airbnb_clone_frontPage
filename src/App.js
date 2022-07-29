@@ -6,26 +6,9 @@ import data from "./data";
 
 function App() {
   const cardEl = data.map((cardStatus) => {
-    const {
-      coverImg,
-      price,
-      title,
-      location,
-      id,
-      stats: { rating, reviewCount },
-    } = cardStatus;
+    const { id } = cardStatus;
 
-    return (
-      <Card
-        key={id}
-        img={coverImg}
-        rating={rating}
-        reviewCount={reviewCount}
-        location={location}
-        title={title}
-        price={price}
-      />
-    );
+    return <Card key={id} cardStatus={cardStatus} />;
   });
   return (
     <div>
