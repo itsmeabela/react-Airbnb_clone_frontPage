@@ -6,7 +6,16 @@ body {
   margin: 0;
   font-family: "Popping", sans-serif;
 }
-
+::-webkit-scrollbar {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 49, 83);
+  border-radius: 1em;
+}
+::-webkit-scrollbar-corner {
+  width: 1px;
+}
 nav {
   height: 70px;
   display: flex;
@@ -37,4 +46,39 @@ section {
 }
 .hero-text {
   margin-top: 0;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto; /* ADD */
+  display: flex; /* ADD */
+  flex-direction: column;
+}
+
+.card--image {
+  width: 100%;
+  margin: 0.5rem;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
+.card--star {
+  height: 14px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
